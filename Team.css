@@ -5,6 +5,7 @@
 }
 body {
   background-color: #12172b;
+  color:white;
   font-family: "new Tegomin", sans-serif;
 }
 .container {
@@ -26,17 +27,20 @@ body {
 }
 .profile {
   flex-basis: 260px;
+  color: white;
 }
 .profile .profile-img {
   height: 260px;
   width: 260px;
   border-radius: 50%;
+  object-fit: cover;
   filter: grayscale(100%);
   cursor: pointer;
-  transition: 400ms;
+  transition: 600ms;
 }
 .profile:hover .profile-img {
   filter: grayscale(0);
+  border-radius: 0%;
 }
 .user-name {
   margin-top: 30px;
@@ -53,7 +57,7 @@ body {
   margin-top: 20px;
   text-align: justify;
 }
-@media only sceen and (max width: 1150px) {
+/* @media only sceen and (max width: 1150px) {
   .profiles {
     flex-direction: column;
   }
@@ -84,3 +88,5 @@ body {
     margin: 20px 10px 80px 10px;
   }
 }
+
+*/
